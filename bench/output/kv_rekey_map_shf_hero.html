@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.7.3</li>
+    <li>Erlang: 21.1</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz</li>
+    <li>Number of Available Cores: 8</li>
+  </ul>
+</article>
+
+
+    <article>
+      <h2>
+        <a name="map_shf_hero"></a>
+        map_shf_hero
+        <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+          <i
+            class="benchee-help-icon icon-question-circle-o"
+            title="Graphs showing the individual run time distribution for map_shf_hero.
+Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+Raw Run Times shows all individual recorded run times in the order they were recorded in."
+          ></i>
+        </a>
+      </h2>
+
+      <section>
+        <h3>Data Table</h3>
+<table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th>Iterations per Second</th>
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>median</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        
+          <td class="text-left">map_shf_hero</td>
+        
+        <td>80.89</td>
+        <td>12.36 ms</td>
+        <td>±17.40%</td>
+        <td>11.75 ms</td>
+        <td>9.71 ms</td>
+        <td>22.35 ms</td>
+        <td>404</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </section>
+
+      <section class="benchee-plot-container">
+        <div id="sorted-run-times" class="plot" data-job-name="map_shf_hero"></div>
+      </section>
+      <section class="benchee-plot-container">
+        <div id="raw-run-times" class="plot" data-job-name="map_shf_hero"></div>
+      </section>
+    </article>
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 0.13.2 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 0.5.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var measurements = {"run_times":[17445,12503,13063,13997,13786,12578,12262,17402,10775,10275,10270,10930,10202,11476,11878,12379,10802,13352,11139,11992,11472,12173,10326,13599,18875,12562,12087,13720,13463,13561,13078,13754,13971,16632,11969,10337,12658,11974,11716,11460,10756,10390,10814,10798,10358,10483,10375,11414,11933,17229,14352,11630,11057,11855,13799,13624,12357,13630,11470,16469,12042,10261,11900,10815,11627,11929,11594,11960,10620,11049,10221,10077,11057,10033,10568,17580,17062,11204,13088,11976,12419,11358,12738,11567,12383,19066,11224,10967,12784,11725,11262,11282,11485,12282,11546,12422,11921,15119,12844,10631,11516,16296,16664,12762,13067,11570,15145,14351,14009,13392,12314,16609,14688,12230,11406,12754,11191,10713,11299,11620,10901,11021,10499,10394,11020,10263,12671,17721,17205,10988,10993,11383,10960,10661,11006,11889,13105,18037,10766,12326,11079,10409,10464,10981,10736,9916,11122,12585,10895,12868,10976,12716,11286,18616,15315,13279,13745,12604,14613,13180,13214,11151,11757,16867,11997,10807,12743,13894,12640,10852,13076,11473,12550,13213,12872,12964,13359,11765,10298,10978,10639,10655,11301,16447,15130,10895,12709,11013,13756,11688,13539,11909,13545,19158,11243,13032,11819,12776,11750,10584,11162,11141,10602,10911,11958,10830,10571,12047,11231,18106,15316,10511,10417,10045,10703,10468,9706,12232,10511,10207,10669,10732,9890,14099,11433,10993,10856,11373,12481,12527,17961,12679,11614,11823,10963,12365,12355,10698,12260,10556,10621,11929,11730,10712,11150,11647,16612,14466,12226,12188,11347,13734,12236,12693,12866,18097,21013,10803,11034,10429,10976,10964,10901,10064,11188,11168,10901,11073,10936,10622,10894,10713,16805,17774,12064,12904,11873,13715,11471,13437,13467,12887,14992,11992,10092,10444,10897,10480,10306,11170,10422,10383,11546,10882,9903,11981,11150,10051,17937,15718,11561,11376,12448,13707,11463,13327,12854,19067,22348,10792,12071,14008,11116,12378,11640,10363,10512,10871,10495,10478,10697,9968,10309,10512,15034,14495,11028,10588,10990,11548,12379,11023,12428,11872,14542,12669,11116,12581,13234,12197,11682,13180,12512,9912,11545,10596,12437,11121,11261,11814,17584,15410,12877,12609,12679,13066,11883,11224,13158,20891,21727,11340,10660,13039,10937,10092,13179,11492,12498,11316,10590,11455,12957,11650,10537,10690,16058,15115,11910,13482,11572,13415,12280,12645,12538,11086,16578,12744,10551,10423,11519,11133,10065,11793,10938,11334,13568,10847,11809,13743,11329,12112,18650,16309],"statistics":{"average":12361.710396039603,"ips":80.89495449758927,"maximum":22348,"median":11753.5,"minimum":9706,"mode":10901,"percentiles":{"50":11753.5,"99":20804.34999999998},"sample_size":404,"std_dev":2151.136717865401,"std_dev_ips":14.077025050317125,"std_dev_ratio":0.17401610690981514}};
+      var runTimes     = measurements.run_times;
+      var statistics   = measurements.statistics;
+
+      var inputHeadline = ""
+
+      drawRawRunTimeCharts(runTimes, inputHeadline, statistics);
+      drawRunTimeHistograms(runTimes, inputHeadline);
+    </script>
+  </body>
+</html>

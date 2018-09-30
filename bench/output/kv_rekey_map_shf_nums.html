@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.7.3</li>
+    <li>Erlang: 21.1</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz</li>
+    <li>Number of Available Cores: 8</li>
+  </ul>
+</article>
+
+
+    <article>
+      <h2>
+        <a name="map_shf_nums"></a>
+        map_shf_nums
+        <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+          <i
+            class="benchee-help-icon icon-question-circle-o"
+            title="Graphs showing the individual run time distribution for map_shf_nums.
+Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+Raw Run Times shows all individual recorded run times in the order they were recorded in."
+          ></i>
+        </a>
+      </h2>
+
+      <section>
+        <h3>Data Table</h3>
+<table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th>Iterations per Second</th>
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>median</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        
+          <td class="text-left">map_shf_nums</td>
+        
+        <td>122.23</td>
+        <td>8.18 ms</td>
+        <td>±15.95%</td>
+        <td>7.81 ms</td>
+        <td>6.57 ms</td>
+        <td>13.73 ms</td>
+        <td>611</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </section>
+
+      <section class="benchee-plot-container">
+        <div id="sorted-run-times" class="plot" data-job-name="map_shf_nums"></div>
+      </section>
+      <section class="benchee-plot-container">
+        <div id="raw-run-times" class="plot" data-job-name="map_shf_nums"></div>
+      </section>
+    </article>
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 0.13.2 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 0.5.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var measurements = {"run_times":[7961,7552,7458,7794,8987,7067,7381,11088,7426,7418,7760,7434,8309,7662,13034,7326,7048,7265,7394,7366,7316,11899,8678,8285,7933,7772,8287,8572,8640,7326,7752,8326,7964,7681,8014,8487,7971,9505,9570,7405,7048,7360,7179,7631,7466,10948,7668,7878,7672,7467,7838,7909,12159,8019,8782,9229,8204,8220,8270,8513,9747,7766,8722,8322,7944,7495,8675,7873,10935,10233,7384,7701,7772,7353,8613,7307,7273,7401,7792,7812,7187,7074,7518,7613,7818,11078,9612,9097,7343,7747,7233,7293,7665,7820,7509,7714,7593,7634,7399,7635,7884,7908,12392,8254,8138,7698,7817,7897,7828,12245,8229,7534,7994,7921,8202,7468,7919,7372,8290,8534,8372,7839,7988,7695,9882,8521,12206,7868,8073,7717,7490,7456,8109,12355,7976,8909,8170,8020,7541,7894,12235,7357,7440,7265,7563,8043,8546,13731,8610,8441,8454,7958,7630,8051,8002,7556,7702,7246,7406,7844,8405,7903,7722,7802,11265,7266,8169,7913,6980,7829,7483,6973,7244,7120,8294,7599,7679,7384,8337,7855,12408,8439,8792,7668,7608,7222,8648,7481,9000,7491,7678,6979,7856,7842,7389,8024,7593,12976,7632,8225,8004,7689,7725,8065,8829,7583,7438,10892,7318,7747,8085,7984,7751,9614,10192,7220,7413,7769,8207,7590,7671,11154,7683,8585,8544,7616,7533,8513,12593,8112,9398,7687,9532,7951,7739,8601,8999,7985,9157,8311,8445,7830,8871,9015,8449,12833,7791,7545,8720,8778,8245,9198,12145,8392,8771,8413,8017,8501,7193,13009,7629,7024,7416,8739,7974,7702,7781,8230,8770,7249,7075,7351,7220,8681,7787,9582,9927,7585,6859,7232,7734,8493,7084,11078,7915,7347,7090,6947,6901,7519,11985,6796,7298,8064,8028,8000,9820,12275,8998,8509,7269,9472,9733,8659,12595,8354,7726,8491,7436,7894,7317,11399,8194,7873,8043,8375,8423,7376,11446,7225,7228,7164,6851,7306,6885,11530,8141,7536,7193,7521,6997,7474,11899,7841,7418,6822,7169,6936,7054,7495,8546,7297,7942,7522,7785,7283,7383,7630,7933,10685,7118,6771,7050,7363,7099,7722,10845,7334,8209,8391,6890,7694,6760,6943,6818,6945,7679,7442,8526,7293,8909,8755,11014,9564,7131,6648,7386,6568,7690,6774,7633,7602,6723,7243,6975,7282,6836,6916,6999,8612,8579,6913,7393,7098,8597,7196,6920,10733,7960,7113,7345,7364,7546,7540,10922,7261,7419,7646,7057,7121,6821,11467,7555,7369,7121,6856,7094,6929,11419,8388,7242,8189,7378,7338,7309,11452,7126,7489,8647,8943,7485,7245,10883,7128,8176,8163,7135,7724,7601,11617,7698,7270,7205,7956,8475,7215,7130,7094,6956,7011,7401,7276,7291,7147,8935,8401,10189,6737,6814,6828,6862,6878,6833,11614,7673,7410,6755,7033,7428,7225,8143,7135,6993,7141,7018,6938,6915,7297,7547,9339,9598,7292,6895,6882,7336,6566,6987,11880,8078,7200,8554,7299,7328,7615,8564,7244,8531,7728,7662,7763,7710,7386,8557,9741,9818,6811,7391,7960,7030,7822,6810,12298,7763,7654,7460,8309,7840,8298,7327,8164,7981,8206,8248,8924,8087,7564,7988,9516,9380,7474,7945,8766,7928,8626,7556,11163,7495,8057,7852,8162,8154,7319,12334,7330,7852,8228,8730,7329,7627,8526,7306,9139,8107,9511,8590,7817,7485,8450,10619,10376,8133,7331,8122,7441,6939,7991,11939,7228,7371,8786,7655,7811,7411,11327,7479,8321,7813,7500,8860,9262,12966,8203,9552,8860,8606,8736,8035,13070,7580,8016,8788,7977,8100,8759,7926,8165,8829,8948,8451,9388,9016,8715,8519,9132,11982,7848,7837,8769,8357,8179,9092],"statistics":{"average":8181.050736497545,"ips":122.23368760430375,"maximum":13731,"median":7812.0,"minimum":6566,"mode":7495,"percentiles":{"50":7812.0,"99":12950.039999999999},"sample_size":611,"std_dev":1304.9636647332543,"std_dev_ips":19.49755918495395,"std_dev_ratio":0.15951052092997198}};
+      var runTimes     = measurements.run_times;
+      var statistics   = measurements.statistics;
+
+      var inputHeadline = ""
+
+      drawRawRunTimeCharts(runTimes, inputHeadline, statistics);
+      drawRunTimeHistograms(runTimes, inputHeadline);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.7.3</li>
+    <li>Erlang: 21.1</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz</li>
+    <li>Number of Available Cores: 8</li>
+  </ul>
+</article>
+
+
+    <article>
+      <h2>
+        <a name="ets_dup_shf_nums"></a>
+        ets_dup_shf_nums
+        <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+          <i
+            class="benchee-help-icon icon-question-circle-o"
+            title="Graphs showing the individual run time distribution for ets_dup_shf_nums.
+Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+Raw Run Times shows all individual recorded run times in the order they were recorded in."
+          ></i>
+        </a>
+      </h2>
+
+      <section>
+        <h3>Data Table</h3>
+<table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th>Iterations per Second</th>
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>median</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        
+          <td class="text-left">ets_dup_shf_nums</td>
+        
+        <td>58.39</td>
+        <td>17.12 ms</td>
+        <td>±8.01%</td>
+        <td>17.16 ms</td>
+        <td>13.44 ms</td>
+        <td>21.59 ms</td>
+        <td>292</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </section>
+
+      <section class="benchee-plot-container">
+        <div id="sorted-run-times" class="plot" data-job-name="ets_dup_shf_nums"></div>
+      </section>
+      <section class="benchee-plot-container">
+        <div id="raw-run-times" class="plot" data-job-name="ets_dup_shf_nums"></div>
+      </section>
+    </article>
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 0.13.2 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 0.5.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var measurements = {"run_times":[20262,18024,15299,14933,17610,16085,18048,16657,15598,16014,16874,16258,17337,18820,18241,17280,16484,18712,15811,17802,17388,18267,15553,16356,18545,17658,18420,16803,16830,16562,16520,19290,17147,17266,16823,18347,18011,18423,17336,14684,15742,17357,14929,15959,15463,16270,15508,14769,14868,13894,16812,16641,17728,17176,15927,18688,17294,16414,17158,15718,15135,18141,18539,17006,17444,17730,16913,16385,14973,17448,17184,17150,16880,17425,14377,16356,15433,14885,15882,16550,16232,16317,19355,16823,14288,18112,16912,16464,15365,16780,15895,15562,15227,13443,17140,16821,17589,16201,15240,17558,14622,17430,16240,16000,17135,15348,13864,16420,15662,16697,16094,15869,16454,16257,15963,17656,16526,17853,17164,14830,15702,15215,16673,17095,15576,15125,18549,17657,19616,16588,16583,15564,15976,17524,17149,14884,16307,16940,16457,15270,16025,17936,16800,16670,17684,17691,17904,18446,17524,16001,18127,17287,18407,21588,18992,17586,18953,16928,18261,16281,17984,17692,15745,19171,17600,17841,17473,18125,16014,19253,17462,18246,18688,20290,18426,18971,17681,20223,20171,18209,15671,17245,18713,19404,18906,17398,16332,14299,14833,15305,16936,14643,15719,16173,20146,17042,17714,16441,15411,17424,14565,16893,16930,19532,17312,16517,16557,15760,19369,17404,17895,19772,17155,19094,19490,16583,16720,16054,16499,16535,17517,19290,18419,17211,17931,16494,17782,18963,17760,19368,17378,18289,17607,17414,17517,17417,16265,17454,15810,18176,18732,14888,19004,17411,17931,17895,16356,17127,15330,15925,17432,16446,18767,16793,15784,15561,16617,17276,16739,17087,16700,18839,18477,18233,21185,18101,18224,17196,17191,18780,20949,18718,17180,17812,17982,17138,17115,17499,17195,20128,16895,18014,17994,17848,18392,16597,17262,18346,17495,17956,19075,17645],"statistics":{"average":17124.85616438356,"ips":58.39465104996383,"maximum":21588,"median":17156.5,"minimum":13443,"mode":16356,"percentiles":{"50":17156.5,"99":20965.519999999997},"sample_size":292,"std_dev":1370.9484438145764,"std_dev_ips":4.674845453624567,"std_dev_ratio":0.08005605598404313}};
+      var runTimes     = measurements.run_times;
+      var statistics   = measurements.statistics;
+
+      var inputHeadline = ""
+
+      drawRawRunTimeCharts(runTimes, inputHeadline, statistics);
+      drawRunTimeHistograms(runTimes, inputHeadline);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.7.3</li>
+    <li>Erlang: 21.1</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz</li>
+    <li>Number of Available Cores: 8</li>
+  </ul>
+</article>
+
+
+    <article>
+      <h2>
+        <a name="ets_ord_seq_hero"></a>
+        ets_ord_seq_hero
+        <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+          <i
+            class="benchee-help-icon icon-question-circle-o"
+            title="Graphs showing the individual run time distribution for ets_ord_seq_hero.
+Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+Raw Run Times shows all individual recorded run times in the order they were recorded in."
+          ></i>
+        </a>
+      </h2>
+
+      <section>
+        <h3>Data Table</h3>
+<table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th>Iterations per Second</th>
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>median</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        
+          <td class="text-left">ets_ord_seq_hero</td>
+        
+        <td>82.19</td>
+        <td>12.17 ms</td>
+        <td>±6.54%</td>
+        <td>11.96 ms</td>
+        <td>11.04 ms</td>
+        <td>15.76 ms</td>
+        <td>411</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </section>
+
+      <section class="benchee-plot-container">
+        <div id="sorted-run-times" class="plot" data-job-name="ets_ord_seq_hero"></div>
+      </section>
+      <section class="benchee-plot-container">
+        <div id="raw-run-times" class="plot" data-job-name="ets_ord_seq_hero"></div>
+      </section>
+    </article>
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 0.13.2 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 0.5.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var measurements = {"run_times":[15735,12423,11986,12056,12089,11513,11766,11594,15211,13019,12431,11758,11894,12526,11621,11807,11567,12098,11911,12634,11959,12023,11824,12447,11756,12071,12033,12248,12387,11894,11997,11223,11664,15041,12151,11851,11893,12342,12346,12138,11631,11857,12058,11684,11523,11357,12859,11628,11294,11447,11902,12359,11353,12636,12128,13405,12885,11839,12934,12951,12018,12444,12398,13022,13223,13147,11955,12383,11300,11315,11643,11606,11571,11415,11889,11911,11700,12065,11314,11887,11558,11078,11960,11630,11688,12198,11607,11972,11389,11989,12737,11944,11826,11961,11952,11631,12328,12202,11544,12056,12632,11879,11686,12125,12188,12375,12047,11726,11894,12640,12225,11763,12144,12507,11898,12744,14802,12676,13266,13772,12205,12335,13017,12060,11949,11832,12450,12335,12152,12398,12000,11956,11987,12449,12007,12231,12408,11774,11985,11757,11725,11823,11631,11569,11263,11476,11863,11823,12737,11675,11909,11696,11464,11592,11440,11884,11521,11290,11633,11944,11546,11468,12133,11857,11261,11507,11532,11529,11326,11642,11657,11330,11784,11670,14535,12565,11671,11587,11409,11830,11305,11192,13375,13631,12091,11340,12057,11619,11471,12161,12161,12531,13430,12047,14279,13430,12358,11915,15760,13297,12405,12003,12093,12801,12228,12856,12818,13293,13005,12754,13305,13327,13174,13233,13272,13278,12484,13005,12400,11667,12083,12158,12296,12663,11832,12118,12141,12122,11696,11688,14814,12513,12490,13520,13814,12202,12084,13539,14768,12493,11735,12134,11932,11784,11870,12391,11723,11609,12070,11722,11964,12167,12240,11517,12751,11947,11878,12772,11772,12720,12174,12356,15497,13185,12237,11993,11697,11892,11880,12134,11841,12069,11794,12120,11720,11803,12226,11698,11952,12057,12009,11448,11861,12463,12534,13714,11512,12509,13606,11745,11365,11835,11802,11514,11563,15101,13266,11958,11782,11384,11827,11688,11695,12443,12213,12244,11725,12377,11634,11664,11475,11976,11423,11722,11862,11659,11883,11574,11689,12263,11532,11690,11762,11722,11539,11499,11701,11040,12956,14830,12275,11263,11521,11611,11425,11522,11926,11467,11750,11549,11690,11390,12295,12071,11520,13625,13114,12509,11597,11534,11287,13000,12002,12055,11911,11579,11997,12176,12412,12112,12725,12627,12258,12643,13350,12281,12156,11961,11804,11747,12076,14454,12467,11387,11619,11870,11379,11622,11639,13787,14823,12551,11770,11626,11457,11761,11719,12797,15349,12371,11509,11526,11850,11540,11411,11249,15421,11971,11331,11707,11463,11364,12028,11869,11532,11821,11733,12599,13012,12044,12021],"statistics":{"average":12166.992700729927,"ips":82.18957836146377,"maximum":15760,"median":11959.0,"minimum":11040,"mode":[11911,11688,11631,11894,11722,11532],"percentiles":{"50":11959.0,"99":15412.36},"sample_size":411,"std_dev":796.3015224026242,"std_dev_ips":5.379117747883339,"std_dev_ratio":0.06544768637486338}};
+      var runTimes     = measurements.run_times;
+      var statistics   = measurements.statistics;
+
+      var inputHeadline = ""
+
+      drawRawRunTimeCharts(runTimes, inputHeadline, statistics);
+      drawRunTimeHistograms(runTimes, inputHeadline);
+    </script>
+  </body>
+</html>

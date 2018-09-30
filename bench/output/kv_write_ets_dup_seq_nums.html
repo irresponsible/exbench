@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.7.3</li>
+    <li>Erlang: 21.1</li>
+    <li>Operating system: macOS</li>
+    <li>Available memory: 16 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz</li>
+    <li>Number of Available Cores: 8</li>
+  </ul>
+</article>
+
+
+    <article>
+      <h2>
+        <a name="ets_dup_seq_nums"></a>
+        ets_dup_seq_nums
+        <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+          <i
+            class="benchee-help-icon icon-question-circle-o"
+            title="Graphs showing the individual run time distribution for ets_dup_seq_nums.
+Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+Raw Run Times shows all individual recorded run times in the order they were recorded in."
+          ></i>
+        </a>
+      </h2>
+
+      <section>
+        <h3>Data Table</h3>
+<table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      <th>Iterations per Second</th>
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>median</th>
+      <th>minimum</th>
+      <th>maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        
+          <td class="text-left">ets_dup_seq_nums</td>
+        
+        <td>71.78</td>
+        <td>13.93 ms</td>
+        <td>±7.62%</td>
+        <td>13.87 ms</td>
+        <td>11.51 ms</td>
+        <td>17.77 ms</td>
+        <td>359</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </section>
+
+      <section class="benchee-plot-container">
+        <div id="sorted-run-times" class="plot" data-job-name="ets_dup_seq_nums"></div>
+      </section>
+      <section class="benchee-plot-container">
+        <div id="raw-run-times" class="plot" data-job-name="ets_dup_seq_nums"></div>
+      </section>
+    </article>
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 0.13.2 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 0.5.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var measurements = {"run_times":[13445,12916,12592,12342,11708,12761,13972,13896,13840,13733,13190,13674,11947,14342,13607,14395,14673,13947,13805,13383,12586,13412,13228,13919,14043,13166,13389,11849,13721,11521,13154,13536,12727,12520,15058,12475,13301,13456,14139,13455,13808,13820,12694,13079,13019,12546,12462,11955,13085,14199,15287,14760,12269,14466,12901,13141,12891,13680,12658,14128,13307,12017,13658,12393,12770,13661,13325,13805,13846,13696,13641,13755,13580,13667,13369,12284,11505,12341,12448,13700,13379,13097,13836,14387,13208,12722,12457,12796,13848,13581,14134,13155,13864,13808,13214,12759,13489,13468,14538,13657,12529,12096,13416,13681,15747,15754,14896,14600,17038,15287,14259,14369,14658,14815,14525,14086,14228,15123,15451,14377,13851,13842,15056,13825,14714,13832,13598,14780,14234,13176,13621,14231,14288,16402,13045,13774,14486,14942,15319,14746,15190,14936,13702,14179,12582,13574,12798,14274,13341,15330,14829,15735,17765,12747,14497,13628,15966,15327,15032,14452,14161,14962,14862,15446,15871,14304,14376,13687,13592,15090,13825,15035,13968,15652,14892,14112,15374,13949,14358,14459,13684,13237,14404,13553,14630,15421,12622,14708,14804,14631,15115,14324,13625,12609,13428,14904,13239,12538,13886,14896,15285,13936,16175,13619,12647,14919,14193,14392,15173,14089,14340,15660,16137,15137,15275,12669,15135,14916,15094,14863,13736,15064,14555,15158,14437,15054,14808,13311,13115,15364,15416,13853,14792,13672,13198,12456,13342,14071,12949,13771,13769,12536,13763,12384,13802,14475,14253,16122,14272,14304,14081,14012,14697,15490,16722,14401,14404,15188,13686,14735,13395,14765,14359,14635,13004,14864,14568,13908,14218,14889,15962,13994,13004,15041,15075,14057,15428,15209,15513,15256,13892,15482,16192,12101,12340,13889,14956,15146,14136,14348,14242,14699,13757,15765,13028,12345,12874,14787,13633,13347,14975,14389,13808,13437,13851,14270,12941,13992,14270,13084,13293,13456,15908,16308,14531,14648,15306,14650,14386,14855,14724,14922,14241,12876,12063,11959,13906,14167,11827,12860,12791,13891,13870,13058,12586,13386,13266,14215,11795,12776,12433,13416,12628,13372,13482,11855,12352,12057,12583,12267,12361,12258,14335,12427,12257,11727,14446,13540,14091],"statistics":{"average":13930.49860724234,"ips":71.78493951968876,"maximum":17765,"median":13870.0,"minimum":11505,"mode":13808,"percentiles":{"50":13870.0,"99":16529.999999999993},"sample_size":359,"std_dev":1061.9186016913757,"std_dev_ips":5.472148897643671,"std_dev_ratio":0.07622976259724787}};
+      var runTimes     = measurements.run_times;
+      var statistics   = measurements.statistics;
+
+      var inputHeadline = ""
+
+      drawRawRunTimeCharts(runTimes, inputHeadline, statistics);
+      drawRunTimeHistograms(runTimes, inputHeadline);
+    </script>
+  </body>
+</html>
